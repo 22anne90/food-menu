@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burgers Menu</title>
+    <style>
+        /* General Page Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.unsplash.com/photo-1561948955-eac07d602574') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 20px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .food-item {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            width: 250px;
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .food-item:hover {
+            transform: scale(1.05);
+        }
+
+        .food-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .food-item h2 {
+            margin: 15px 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .food-item p {
+            color: #666;
+            padding: 0 15px 15px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent footer */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Burger Menu</h1>
+        <p>Explore a variety of mouthwatering burgers!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="fried_chicken.html">Fried Chicken</a>
+        <a href="pizza.html">Pizza</a>
+        <a href="burger.html">Burger</a> <!-- Active link for Burger page -->
+        <a href="pasta.html">Pasta</a>
+    </nav>
+
+    <div class="container">
+        <div class="food-item">
+            <img src="fem.jpg" alt="Cheeseburger">
+            <h2>Cheeseburger</h2>
+            <p>Classic cheeseburger with a juicy beef patty, cheddar cheese, and fresh toppings.</p>
+        </div>
+
+        <div class="food-item">
+            <img src="von.webp" alt="Bacon Burger">
+            <h2>Bacon Burger</h2>
+            <p>Grilled beef patty topped with crispy bacon, lettuce, tomato, and a smoky BBQ sauce.</p>
+        </div>
+
+        <div class="food-item">
+            <img src="vegie.jpg" alt="Veggie Burger">
+            <h2>Veggie Burger</h2>
+            <p>A delicious veggie patty with grilled mushrooms, fresh greens, and a creamy avocado spread.</p>
+        </div>
+
+        <div class="food-item">
+            <img src="chik.jfif" alt="Chicken Burger">
+            <h2>Chicken Burger</h2>
+            <p>Grilled chicken breast topped with lettuce, tomatoes, and tangy mayo in a soft bun.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Food Lovers | All rights reserved</p>
+    </footer>
+
+</body>
+</html>
